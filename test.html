@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Graydot Assignment</title>
+	<link rel="stylesheet" type="text/css" href=".CSS/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="banner">
+			Drag and Drop
+		</h1>
+		<div class="messages">
+			<div id="success-message" class="successDrag">
+				<p>Successfully dropped</p>
+			</div>
+			<div id="success-remove-message" class="successReset">
+				<p>Successfully reset</p>
+			</div>
+			<div id="error-drop-message" class="errorDrop">
+				<p>Cannot drop there</p>
+			</div>
+		</div>
+		<div class="flexrow">
+			<div class="itemContainer" id="container1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" >
+				</img>
+				<span>
+					Olha que coisa mais linda
+					Mais cheia de graça
+				</span>
+				<i style="font-size:50px">
+					&#129409;
+				</i>
+			</div>
+			<div class="itemContainer" id="container2"  ondrop="drop(event)" ondragover="allowDrop(event)">
+			</div>
+		</div>
+		<div class="resetButton" onClick="reset()">
+			Reset
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src=".JS/script.js"></script>
+</html>
