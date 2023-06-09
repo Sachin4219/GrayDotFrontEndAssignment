@@ -38,12 +38,13 @@ body *{
 	width: 40%;
 	max-width: 400px;
 	height: auto;
-	min-height: 250px;
+	min-height: 300px;
 	padding: 10px;
 	border: 2px solid #a7a7a7;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap:20px;
 	align-items: center;
 	border-radius: 5px;
 }
